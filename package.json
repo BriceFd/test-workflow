@@ -1,0 +1,22 @@
+{
+  "name": "test-workflow",
+  "version": "1.0.0",
+  "description": "- On créer un répertoire sur Github, pensez à mettre le gitignore pour Node et ajouter le Readme.md\r - Clonez le repo en local\r - Faite la commande npm init\r - Ajoutez un fichier index.js (même vide)\r - Ensuite, installez jest avec la commande npm i jest\r - Ajoutez un dossier __tests__\r - Puis un fichier index.spec.js dans ce dossier avec le contenu \r ```\r test(\"hello_world\", () => {\r     expect(true).toBe(false)\r })\r ```\r - Vérifiez que tout fonctionne bien avec la commande npx jest\r - Ensuite installez eslint avec npm i eslint\r - Initialiser eslint avec npx eslint --init (Choisir syntax, commonjs, none, no, Node, Yes, npm)\r - On modifie le contenu du fichier eslint.config.mjs avec\r ```\r import globals from \"globals\";",
+  "main": "index.js",
+  "test": "jest",
+  "build": "node index.js",
+  "lint": "eslint .",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.18.0",
+    "globals": "^15.14.0"
+  },
+  "type": "module"
+}
